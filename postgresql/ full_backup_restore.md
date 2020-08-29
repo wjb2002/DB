@@ -34,7 +34,7 @@
 ## 3. 백업 스크립트  
 - 아래 스크립트에서 ip와 dump를 저장할 디렉토리를 지정합니다. (/data/db.dump0425 이부분 입니다)
 
-> sudo pg_dump -h DB서버ip -U user -Fd -f /data/db.dump0425 -j 20 omop_v1
+> sudo pg_dump -h DB서버ip -U user -Fd -f /data/db.dump0425 -j 20 tdb
 
 
 
@@ -45,6 +45,6 @@
 ## 4. 복원 스크립트 
 - 아래 스크립트에서 ip와 dump가 있는 디렉토리를 지정합니다. (/data/db.dump0425 이부분 입니다)
 
-> sudo pg_restore  -h DB서버ip  -U user  -j 20 -d omop /data/db.dump0425
+> sudo pg_restore  -h DB서버ip  -U user  -j 20 -d tdb /data/db.dump0425
 
-- 스크립트 실행이 정상적으로  완료 되면 해당 DB(위에서 omop) 에 데이터들이 복구 된걸 확인할수 있습니다.
+- 스크립트 실행이 정상적으로  완료 되면 해당 DB(위에서 tdb) 에 데이터들이 복구 된걸 확인할수 있습니다.
