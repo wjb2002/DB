@@ -33,7 +33,6 @@
 
 ## 3. 백업 스크립트  
 - 아래 스크립트에서 ip와 dump를 저장할 디렉토리를 지정합니다. (/data/db.dump0425 이부분 입니다)
-![image](https://user-images.githubusercontent.com/42956663/57428106-c8eed400-7261-11e9-9c2a-5125fb645c5e.png)
 
 > sudo pg_dump -h DB서버ip -U user -Fd -f /data/db.dump0425 -j 20 omop_v1
 
